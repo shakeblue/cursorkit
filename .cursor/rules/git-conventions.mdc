@@ -1,0 +1,32 @@
+---
+description: "Git workflow, commit message, and PR standards"
+---
+
+# Git Conventions
+
+## Commit Messages
+```
+type(scope): subject
+
+body (optional)
+```
+
+Types: `feat`, `fix`, `docs`, `style`, `refactor`, `test`, `chore`
+
+## Branch Naming
+- `feature/[ticket]-[description]`
+- `fix/[ticket]-[description]`
+- `hotfix/[description]`
+- `chore/[description]`
+
+## Do NOT Commit
+- Test/debug/investigate/temp/check/analyze scripts
+- Images and output JSON files
+- `.env` files or credentials
+- Debug statements or commented-out code
+
+## PR Requirements
+- Descriptive title and description
+- All tests passing
+- No merge conflicts
+- Reference issue numbers

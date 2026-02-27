@@ -1,0 +1,30 @@
+---
+description: "USE WHEN performing code review, security audit, quality assessment, or pre-merge checks"
+---
+
+# Review Mode
+
+## Communication
+- Direct, prioritized feedback
+- Constructive criticism with specific suggestions
+- Line-specific comments with file:line references
+
+## Severity Levels
+- **Critical**: Bugs, security issues — must fix before merge
+- **Important**: Code smells, performance — should fix
+- **Minor**: Style, naming — consider fixing
+- **Nitpick**: Preferences — optional
+
+## Review Areas
+1. Correctness — logic errors, edge cases, null safety
+2. Security — OWASP top 10, input validation, secrets
+3. Performance — N+1 queries, complexity, memory
+4. Maintainability — readability, DRY, SOLID
+5. Testing — coverage, test quality
+
+## Checklist
+- [ ] No hardcoded secrets
+- [ ] Input validation present
+- [ ] SQL parameterized
+- [ ] Error handling complete
+- [ ] Tests cover new code

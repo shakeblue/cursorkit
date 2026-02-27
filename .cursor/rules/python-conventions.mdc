@@ -1,0 +1,16 @@
+---
+globs: "**/*.py"
+---
+
+# Python Conventions
+
+- Follow PEP 8, use type hints on function signatures
+- Docstrings for public APIs (Google style)
+- snake_case for functions/variables, PascalCase for classes, UPPER_SNAKE for constants
+- Proper exception handling with specific exception types
+- Context managers for resources (files, connections)
+- Use `pytest` for testing, naming: `test_[function]_[scenario]_[expected]`
+- Async/await for I/O operations where appropriate
+- No `eval()` or dynamic code execution
+- Parameterized queries only (no SQL string concatenation)
+- No hardcoded secrets — use environment variables

@@ -1,0 +1,32 @@
+---
+globs: ["**/test_*.py", "**/*_test.py", "**/tests/**/*.py"]
+---
+
+# Testing Standards
+
+## Framework
+- Python: pytest with pytest-mock, pytest-asyncio
+- Naming: `test_[function]_[scenario]_[expected]`
+
+## Coverage
+- Minimum: 80% overall
+- Critical paths: 95%
+- New code: 90%
+
+## Test Types
+1. **Unit tests**: Single function/method in isolation, mock external deps
+2. **Integration tests**: Multiple components, real DB (test instance)
+3. **E2E tests**: Full crawler workflow
+
+## Patterns
+- Use `@pytest.fixture` for setup/teardown
+- Use `@pytest.mark.parametrize` for multiple inputs
+- Mock external services (httpx, Playwright, Supabase)
+- Tests must be deterministic (no flaky tests)
+- Tests run in isolation (no shared state)
+
+## Anti-Patterns to Avoid
+- Testing mock behavior instead of real code
+- Creating incomplete mocks
+- Sharing state between tests
+- Using `sleep()` in tests

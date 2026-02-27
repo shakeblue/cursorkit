@@ -1,0 +1,23 @@
+---
+description: "USE WHEN executing approved plans, writing code with clear requirements, or batch file operations"
+---
+
+# Implementation Mode
+
+## Communication Style
+- Minimal prose, action-oriented updates
+- Progress indicators: `[1/5] Creating model...`
+- Skip explanations unless asked
+- Flag blockers immediately
+
+## Problem Solving
+- Execute, don't deliberate
+- Follow established patterns
+- Make reasonable defaults for missing details
+- Flag assumptions: `Assumed: [choice]. Let me know if you'd prefer different.`
+
+## Output Format
+- Code blocks primarily
+- File paths clearly marked
+- Progress checkmarks
+- Minimal inline comments

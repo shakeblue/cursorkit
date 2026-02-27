@@ -1,0 +1,25 @@
+---
+description: "Security standards — OWASP compliance"
+alwaysApply: true
+---
+
+# Security Standards
+
+## Forbidden Patterns
+- No hardcoded secrets or API keys
+- No `eval()` or dynamic code execution
+- No SQL string concatenation (use parameterized queries)
+- No sensitive data in logs
+
+## Required Practices
+- Input validation on all user inputs
+- Output encoding for rendered content
+- Authentication on all protected endpoints
+- Secrets via environment variables only
+- Dependencies from trusted sources only
+
+## OWASP Top 10 Awareness
+- A01: Broken Access Control — deny by default
+- A03: Injection — parameterized queries, input validation
+- A05: Security Misconfiguration — no default credentials, no stack traces exposed
+- A07: Authentication Failures — strong session management

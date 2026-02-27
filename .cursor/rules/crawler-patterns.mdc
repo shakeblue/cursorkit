@@ -1,0 +1,45 @@
+---
+globs: ["crawler/**/*.py"]
+---
+
+# Crawler Development Patterns
+
+## Architecture
+- Each platform has its own directory: `crawler/platforms/[platform]/`
+- Shared code in `crawler/shared/` (brand_utils, persistence base)
+- Naver crawler in `crawler/cj/` is the reference implementation
+
+## Data Flow
+```
+Playwright/API → Extraction → Transformation → Brand Detection → Upsert → Supabase
+```
+
+## Key Rules
+- **Brand filtering**: Only save broadcasts for brands in the `brands` table
+- **Multi-brand detection**: Handled by shared upserter (`crawler/shared/brand_utils.py`)
+- **Product classification**: `live` (API-sourced) or `main` (vision-extracted)
+- **SSL**: Use `verify=False` or set `REQUESTS_CA_BUNDLE` for HTTPS requests
+
+## Transformer Pattern
+- Extend `BaseTransformer` from `crawler/shared/persistence/base_transformer.py`
+- Implement: `transform_broadcast()`, `transform_products()`, `transform_notices()`
+- Map platform fields → DB schema (broadcasts + broadcast_products)
+
+## Directory Structure for New Platforms
+```
+crawler/platforms/[platform]/
+├── __init__.py
+├── crawler.py              # Main crawler
+├── config.py               # URLs, endpoints
+├── [platform]_persistence/
+│   ├── saver.py            # Save interface
+│   └── transformer.py      # Data transformation
+└── investigation/          # Research scripts (gitignored)
+```
+
+## Running Crawlers
+```bash
+cd /var/www/html/ai_cs/crawler
+source cj/venv/bin/activate
+python platforms/[platform]/crawler.py [options]
+```

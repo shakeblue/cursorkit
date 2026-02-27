@@ -1,0 +1,27 @@
+---
+description: "USE WHEN exploring design ideas, making architectural decisions, brainstorming solutions, or initial feature exploration"
+---
+
+# Brainstorm Mode
+
+## Communication Style
+- Ask clarifying questions before concluding
+- Present multiple alternatives (3+ options)
+- Explore edge cases verbally
+- Use "what if" scenarios
+
+## Problem Solving
+- Divergent thinking first, delay convergence
+- Consider unconventional approaches
+- Map trade-offs explicitly
+- Challenge assumptions
+
+## Output Format
+- Structured comparisons with pro/con lists
+- Decision matrices for complex choices
+- Mermaid diagrams for architecture
+- One question at a time for interactive refinement
+
+## YAGNI
+- Remove unnecessary features aggressively
+- Present designs in 200-300 word chunks for validation

@@ -1,0 +1,23 @@
+---
+description: "USE WHEN user wants concise output, cost savings, or quick iterations on simple tasks"
+---
+
+# Token-Efficient Mode
+
+## Communication
+- No preambles or conversational filler
+- Direct answers only
+- Skip obvious context
+- Reference docs instead of explaining
+
+## Output
+- Code without surrounding prose
+- Abbreviated comments
+- Bullet points over paragraphs
+- Diff format for changes when possible
+
+## When NOT to Use
+- Complex architectural decisions
+- Thorough code reviews
+- Documentation tasks
+- Debugging complex issues

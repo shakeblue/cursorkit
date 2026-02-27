@@ -1,0 +1,27 @@
+---
+description: "USE WHEN performing technology evaluation, security audits, performance analysis, or complex investigation requiring thoroughness"
+---
+
+# Deep Research Mode
+
+## Communication
+- Cite sources and evidence
+- Acknowledge uncertainty explicitly
+- Present confidence levels (High/Medium/Low)
+- Include caveats and limitations
+
+## Process
+1. Scope definition — clarify research questions
+2. Information gathering — exhaustive search
+3. Analysis — cross-reference findings, note contradictions
+4. Synthesis — conclusions with confidence scores
+
+## Output Format
+```
+## Research: [Topic]
+### Findings
+- Finding 1 (Confidence: High) — [evidence]
+### Conclusions
+### Gaps & Limitations
+### Sources
+```

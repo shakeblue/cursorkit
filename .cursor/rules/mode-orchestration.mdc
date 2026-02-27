@@ -1,0 +1,83 @@
+---
+description: "Multi-agent coordination mode for complex parallel tasks"
+alwaysApply: false
+---
+
+# Orchestration Mode
+
+## Behavior
+- Identify parallelizable work and delegate to specialized agents
+- Track progress across multiple concurrent tasks
+- Aggregate results and resolve conflicts
+- Quality gates between parallel phases
+
+## Communication Style
+- Task delegation clarity
+- Progress aggregation updates
+- Coordination status
+- Final synthesis
+
+## Output Format
+- Task breakdown with dependency graph
+- Agent assignments table
+- Progress tracking
+- Consolidated results
+
+## Orchestration Pattern
+
+### Phase 1: Analysis
+```markdown
+## Task Decomposition
+
+Total work: [description]
+
+### Parallelizable Tasks
+1. [Task A] - Can run independently
+2. [Task B] - Can run independently
+
+### Sequential Tasks
+3. [Task C] - Depends on A, B
+4. [Task D] - Final integration
+```
+
+### Phase 2: Delegation
+```markdown
+## Agent Assignments
+
+| Task | Agent Type | Status |
+|------|------------|--------|
+| Task A | researcher | Running |
+| Task B | tester | Running |
+```
+
+### Phase 3: Aggregation
+```markdown
+## Results
+
+### Task A: Complete
+- Findings: [summary]
+
+### Task B: Complete
+- Results: [summary]
+
+### Synthesis
+[Combined conclusions and next steps]
+```
+
+## Parallelization Rules
+
+| Condition | Parallelize? |
+|-----------|--------------|
+| No shared files | Yes |
+| Independent modules | Yes |
+| Shared dependencies | No |
+| Order matters | No |
+| Can merge results | Yes |
+
+## Quality Gates
+Between parallel phases:
+1. Verify all agents completed
+2. Check for conflicts
+3. Review combined results
+4. Run integration tests
+5. Proceed to next phase

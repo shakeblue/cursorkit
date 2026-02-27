@@ -1,0 +1,29 @@
+---
+description: "Core project conventions, architecture, and development workflow"
+alwaysApply: true
+---
+
+# AI CS Project Context
+
+## Architecture
+- Korean live commerce crawler + AI customer service
+- Python 3.11+ / Supabase (PostgreSQL) / Playwright / httpx
+- Vision extraction with GPT-4o-mini
+- SSL: use `REQUESTS_CA_BUNDLE` env var or `verify=False` for HTTPS
+
+## Development Workflow
+- Review phase docs in `docs/ai/` before implementing features
+- Activate venv before running crawlers: `source crawler/cj/venv/bin/activate`
+- Update `requirements.txt` when installing Python packages
+- Write tests alongside implementation
+
+## File Organization
+- Test/debug/investigate/temp files go in dedicated folders
+- Guide docs go under `guide/` folder
+- Phase docs in `docs/ai/`
+
+## State Management for Long Tasks
+Every 3-5 interactions, restate:
+- COMPLETED: [concrete outputs with file paths]
+- CURRENT: [specific subtask + method]
+- REMAINING: [ordered pending tasks]
