@@ -154,7 +154,7 @@ Override mode for single command:
 
 ## Mode Files
 
-Mode definitions are in `.claude/modes/`:
+Mode definitions are in `.cursor/rules/`:
 - `default.md`
 - `brainstorm.md`
 - `token-efficient.md`

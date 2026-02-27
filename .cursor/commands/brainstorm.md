@@ -20,7 +20,7 @@ Start interactive brainstorming session for: **$ARGUMENTS**
 
 ## Methodology
 
-**Reference**: `.claude/skills/methodology/brainstorming/SKILL.md`
+**Reference**: `.cursor/skills/methodology/brainstorming/SKILL.md`
 
 This command uses the superpowers brainstorming methodology for optimal results.
 

@@ -21,7 +21,7 @@ Create a checkpoint of current state:
 **Process:**
 1. Create git stash with descriptive message
 2. Record current context (files being worked on, task state)
-3. Save checkpoint metadata to `.claude/checkpoints/[name].json`
+3. Save checkpoint metadata to `.cursor/checkpoints/[name].json`
 
 **Metadata Format:**
 ```json
@@ -130,5 +130,5 @@ When resuming work:
 
 - Checkpoints use git stash (requires git repo)
 - Large uncommitted changes may be slow
-- Metadata stored in `.claude/checkpoints/`
+- Metadata stored in `.cursor/checkpoints/`
 - Consider committing before checkpointing for safety

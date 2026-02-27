@@ -20,7 +20,7 @@ Execute plan from: **$ARGUMENTS**
 
 ## Methodology
 
-**Reference**: `.claude/skills/methodology/executing-plans/SKILL.md`
+**Reference**: `.cursor/skills/methodology/executing-plans/SKILL.md`
 
 This command uses the superpowers execution methodology for quality-gated implementation.
 
